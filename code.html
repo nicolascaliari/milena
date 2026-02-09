@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aesthetic Makeup Artistry | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e97149",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211511",
+                        "nude-soft": "#fdf1ec",
+                        "blush-soft": "#f9e6e1",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 10px;
+            gap: 20px;
+        }
+
+        .masonry-item-short {
+            grid-row-end: span 30;
+        }
+
+        .masonry-item-long {
+            grid-row-end: span 45;
+        }
+
+        .masonry-item-med {
+            grid-row-end: span 38;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .serif-text {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-serif italic tracking-wider text-primary">milena </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest">
+                <a class="hover:text-primary transition-colors" href="#home">Home</a>
+                <a class="hover:text-primary transition-colors" href="#philosophy">Philosophy</a>
+                <a class="hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
+                <a class="hover:text-primary transition-colors" href="#about">About</a>
+                <a class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-primary/90 transition-all shadow-sm"
+                    href="#contact">Book Session</a>
+            </div>
+            <button class="md:hidden text-primary">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="home">
+        <div class="absolute inset-0 z-0">
+            <img alt="Professional soft glam makeup look" class="w-full h-full object-cover opacity-80 dark:opacity-50"
+                data-alt="Professional soft focus makeup look portrait"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeeJ5q6GEy7kt36OOsDAbRHzKAmEvH9UzFabgsEjEH4_gTgpgllF8rKckd7982sucfp0VuiA2ku2VNCS5KrQ11Afb8pY3yyyABqT78DUQYHiebtbpaBswPlEV9okIhpUlxK6z8reNe3JJQQyG_vjyCoZPxwLNUgnQjtcdettMxCH09ukdVVNgWIl1vcPSAOy2O3MZJFc-E-G9hm7523-3zflKPUFVvD45yBPlREpuw27E6JJCFBbj3iLmjOUdgYp8c5lABAVNqbGHp" />
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-background-light/20 to-background-light dark:to-background-dark">
+            </div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="text-primary font-medium tracking-[0.3em] uppercase mb-4 block">Artistry in Every Detail</span>
+            <h1 class="serif-text text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">Unveiling Your <br /><span
+                    class="italic">Natural Radiance</span></h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 opacity-90">Professional makeup artistry
+                tailored to enhance your unique features for life's most beautiful moments.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a class="px-8 py-4 bg-primary text-white rounded-full font-medium hover:shadow-lg transition-all w-full sm:w-auto"
+                    href="#portfolio">View Portfolio</a>
+                <a class="px-8 py-4 border border-primary text-primary rounded-full font-medium hover:bg-primary/5 transition-all w-full sm:w-auto"
+                    href="#about">My Story</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+            <span class="material-icons text-3xl">expand_more</span>
+        </div>
+    </section>
+    <!-- Philosophy Section -->
+    <section class="py-24 px-6 bg-white dark:bg-zinc-900/30" id="philosophy">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="serif-text text-4xl md:text-5xl mb-4">The Philosophy</h2>
+                <div class="w-12 h-0.5 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-xl mx-auto text-slate-500 dark:text-slate-400">Beauty isn't about transformation—it's
+                    about illumination. My approach focuses on healthy skin and timeless elegance.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div
+                    class="p-10 rounded-xl bg-nude-soft dark:bg-white/5 text-center transition-transform hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-white dark:bg-background-dark rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+                        <span class="material-icons text-primary text-3xl">auto_fix_high</span>
+                    </div>
+                    <h3 class="serif-text text-2xl mb-4 italic">Natural Beauty</h3>
+                    <p class="text-sm leading-relaxed opacity-70">Focusing on enhancing your natural structure rather
+                        than masking it. We believe in high-definition looks that feel like a second skin.</p>
+                </div>
+                <div
+                    class="p-10 rounded-xl bg-blush-soft dark:bg-white/5 text-center transition-transform hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-white dark:bg-background-dark rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+                        <span class="material-icons text-primary text-3xl">sanitizer</span>
+                    </div>
+                    <h3 class="serif-text text-2xl mb-4 italic">Premium Care</h3>
+                    <p class="text-sm leading-relaxed opacity-70">Using only high-end, cruelty-free products that
+                        prioritize skin health. Every application is as much a facial as it is artistry.</p>
+                </div>
+                <div
+                    class="p-10 rounded-xl bg-nude-soft dark:bg-white/5 text-center transition-transform hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-white dark:bg-background-dark rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+                        <span class="material-icons text-primary text-3xl">palette</span>
+                    </div>
+                    <h3 class="serif-text text-2xl mb-4 italic">Tailored Artistry</h3>
+                    <p class="text-sm leading-relaxed opacity-70">Personalized consultations to match your personality,
+                        the lighting of your event, and your specific skin needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Gallery -->
+    <section class="py-24 px-6" id="portfolio">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="serif-text text-4xl md:text-5xl mb-4">Selected Works</h2>
+                    <p class="text-slate-500 dark:text-slate-400">A curated collection of editorial, bridal, and red
+                        carpet looks.</p>
+                </div>
+                <div class="mt-8 md:mt-0 flex gap-6 text-sm font-medium tracking-widest uppercase opacity-60">
+                    <button class="hover:text-primary transition-colors underline underline-offset-8">All</button>
+                    <button class="hover:text-primary transition-colors">Bridal</button>
+                    <button class="hover:text-primary transition-colors">Editorial</button>
+                </div>
+            </div>
+            <div class="masonry-grid">
+                <div class="masonry-item-long group relative overflow-hidden rounded-xl">
+                    <img alt="Bridal makeup profile"
+                        class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                        data-alt="Elegant bridal makeup profile portrait"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuARHz_JXkUsfcA_71hqm3FjBo80QBvqbBxdVL69AT1u9eWzYSUZn8Gbz_Fz8NmeE8KhI3RSp1TJAq4Glae8biIJYk6m2LhtuRtYogkz0Ws0cwcRZ247zaCBE9xyApqYBkzn4bikwniiNab2JppHw4hbwtvdACxnG05kp5h9ELrRfBfT_-jkFcHIrp_L5bMs3n5ynwkD0oGo9rJe_45UorhlviN-KQXh-6SgLmAZ82DBjT0MV_SsBBY8Q8CunU6YGCnNpzdrApqZ9YnL" />
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-white font-serif italic text-xl">The Ethereal Bride</p>
+                    </div>
+                </div>
+                <div class="masonry-item-short group relative overflow-hidden rounded-xl">
+                    <img alt="Close up eye makeup"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                        data-alt="Close up artistic eye makeup photography"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGKT4SE_kB5sU7shZNjSwC0X5AkL5QIjd4MKg946rixMvcz7sHnd7X5BZLzGWANha2Zqoaw6xQgaZWfCo_ovxVVFqs2sZT-0rfv7-SktM4oA4qldKpVELmvDcMrNqYxgme54Q_SKXkZ6NEU0yDh0LD6y3EJdmLk8vE4bprHHpDk6LrLBMWaBlyM9XDkz5TulkuRs-cL_-Ny5jYXdariwAqOz_-OevC7253LFA-Z8Qw1XrJrB0cxwvu71e3qdFaM1nqWmFftUnKIkTd" />
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-white font-serif italic text-xl">Gilded Detail</p>
+                    </div>
+                </div>
+                <div class="masonry-item-med group relative overflow-hidden rounded-xl">
+                    <img alt="Model with soft blush makeup"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                        data-alt="Editorial fashion makeup with soft blush tones"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdv4_ZGN9qOZzLgazeFNApGg74oAoFzVgBdppIYS-OWqZXmcIEqZtbMbBW8FFsnD56drwtv2fQSwwVMSTWN5VI1o9AZk2gDKnTydSUUrQsQyfvY6jng1SM88l1FQsDLrsvjYCgLYvfaPBBJDau-c9wHM5Za70-vl8GbbJjzgFLqeTNfuIHd3Bf4_XW_5L-mK2G0Ah3iuynb7_wIIw3y5ULgNC4G6uiOd94xtRirEP_kzKgdCFasu9eKh7UsoU2sOQDUR7V8qGgSSn5" />
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-white font-serif italic text-xl">Sunkissed Editorial</p>
+                    </div>
+                </div>
+                <div class="masonry-item-short group relative overflow-hidden rounded-xl">
+                    <img alt="Evening glam look"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                        data-alt="Evening high fashion glamour makeup look"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjywKdYx9hJMwqGAp8nOOTaAs6J4mbezEX6NWMHaZghqesffrpryHAcCGMo_4HnnS7lvOqM2yfvx65C26dCBwVgSFB2j_pVIZiANer-36JPs79t2ZVk2kyOk68i0ymAwbOtKWfLH4cNQSY3iVqrK-9Bg3c5P1JtjNOlkEb36ymlGn8FxZzsY_VJyjxKvBvC9BsTfWs9wtwt24S23xjBBnaCve-RmiuXUaf0S8Dw4z82HdhtQjqd-8PU_-06XdlEtMesUlwJ4KjjAW2" />
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-white font-serif italic text-xl">Midnight Velvet</p>
+                    </div>
+                </div>
+                <div class="masonry-item-med group relative overflow-hidden rounded-xl">
+                    <img alt="Nude palette look"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                        data-alt="Natural nude palette professional makeup application"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkv-xhiMenFzX_24r71_KWHKTpoSLxQclUhcXx14RFr8hAv-NepPaJLKvdo_2GHWngpeYX_pI_WvsuGz_Qj4WlCe2UpsONrnXaDidJTEV9TEejXDr9ghkWuxrMToi25BfZX9WcrR15t_MH7Jb9o9hBQzaHhYFaPPOSQ5ZI0_s6ueSKVJ_9uNHSUicYzyKRjK1Xq-CFBPlU5pWJB2FGmpqMOG8rHOPJY17V3H2OABgGGcl4sTN-HGkIow4BSmDcTnYxtgE85pHnFrgL" />
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-white font-serif italic text-xl">Classic Radiance</p>
+                    </div>
+                </div>
+                <div class="masonry-item-short group relative overflow-hidden rounded-xl">
+                    <img alt="Avant garde makeup"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                        data-alt="Artistic avant garde creative makeup design"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_BDpSi2S3-Ti9lrLFuAKlUf-mpSJ3n0Gt3R18a8NRicVxQv2kdxBa_eRpH_pSQfWZP8yhIKWy_YPUFMZnzV5z-jtXx3IN9i2R85HojH-l6hl-JAF8ljRD66Bifbp9Jqw00LT2Ii5qu6dEw6DFd_6Qe22i8SXegKIMe2bFgMdOvGQ0pS0cQgJl6RKLRPD-qD6coyZgkYOLuXKs41Je7euo6UGiCUn7gdXEO-SJJoICG1m9JCyxgE8arU0oMzZ8fZw0Ts3jaqZCpOI_" />
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-white font-serif italic text-xl">Pure Expression</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-24 px-6 bg-nude-soft dark:bg-background-dark/50" id="about">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary/30"></div>
+                <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary/30"></div>
+                <img alt="Makeup artist portrait"
+                    class="rounded-xl shadow-2xl relative z-10 w-full aspect-[4/5] object-cover"
+                    data-alt="Elegant portrait of professional makeup artist"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2mCi2gUBcxJnLYC0Kttf-3loFNJ6UzQ8bdNS1Y6CoJoQmhAZ-4AIv5f3DTwjPasvvAkeepvD_2F1GNDPjfF4BTXf-35FcnbQvXKjcSpKsNhhaTuGkS9EZh1kA_tXjjFYvGQ4K4ymRoF4imSzvFbvVBk1caoHWV7k04-a55TAx61HkoewwKSredlFDGSH9Z1OfPQWLDXppc6DzlP58EsRnanZApQC1WAffqGBRginxRq14hE-i4ABk6XcIshFsyOtwmuPbyu8vqib4" />
+            </div>
+            <div class="lg:w-1/2">
+                <span class="text-primary font-medium tracking-widest uppercase text-sm mb-4 block">Meet the
+                    Artist</span>
+                <h2 class="serif-text text-4xl md:text-5xl mb-8 leading-tight">Crafting Beauty Through <span
+                        class="italic">Intention &amp; Art.</span></h2>
+                <div class="space-y-6 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p>I’m milena , a professional makeup artist with over a decade of experience in finding the
+                        perfect balance between editorial flair and everyday elegance. My journey began in the runways
+                        of Milan, but my heart found its home in creating intimate, personal beauty experiences.</p>
+                    <p>My aesthetic is defined by "The Glow"—a signature finish that looks radiant in person and
+                        flawless on camera. I believe that makeup should never be a mask, but a celebration of the
+                        unique architecture of your face.</p>
+                </div>
+                <div class="mt-10 grid grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-3xl serif-text text-primary">12+</p>
+                        <p class="text-xs uppercase tracking-widest opacity-60">Years Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl serif-text text-primary">500+</p>
+                        <p class="text-xs uppercase tracking-widest opacity-60">Brides Styled</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-24 px-6 bg-white dark:bg-zinc-900/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="material-icons text-primary/30 text-6xl mb-8">format_quote</span>
+            <p class="serif-text text-2xl md:text-3xl italic leading-relaxed mb-10 text-slate-700 dark:text-slate-200">
+                "milena has a magical way of making you look like the best version of yourself. I’ve never felt more
+                beautiful than on my wedding day. Her presence is as calming as her results are stunning."
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-12 h-0.5 bg-primary/20"></div>
+                <p class="font-bold tracking-widest uppercase text-sm">Sophia Montgomery</p>
+                <div class="w-12 h-0.5 bg-primary/20"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer / Contact -->
+    <footer class="bg-background-light dark:bg-background-dark pt-24 pb-12 px-6 border-t border-primary/10"
+        id="contact">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-20">
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-serif italic tracking-wider text-primary mb-6">milena </div>
+                    <p class="max-w-sm text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
+                        Currently based in London, available for global travel. Specializing in high-end bridal,
+                        editorial campaigns, and personalized beauty coaching.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.43 7c.772 0 1.4.628 1.4 1.4v7.2c0 .772-.628 1.4-1.4 1.4h-1.9v-3.71h1.24l.18-1.44h-1.42v-.92c0-.41.11-.7.71-.7h.76v-1.27c-.13-.02-.58-.06-1.1-.06-1.09 0-1.84.66-1.84 1.88v1.05h-1.24v1.44h1.24v3.71h-3.41v-10h8.98z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs uppercase tracking-[0.2em] mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#home">Home</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#philosophy">Philosophy</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#portfolio">Portfolio</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#about">About Me</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs uppercase tracking-[0.2em] mb-8">Newsletter</h4>
+                    <p class="text-xs text-slate-500 mb-4">Receive beauty tips and seasonal updates.</p>
+                    <div class="flex">
+                        <input
+                            class="bg-white dark:bg-zinc-800 border-none rounded-l-lg text-sm px-4 w-full focus:ring-1 focus:ring-primary"
+                            placeholder="Your email" type="email" />
+                        <button class="bg-primary text-white p-2 rounded-r-lg">
+                            <span class="material-icons">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-slate-400">
+                <p>© 2024 milena Artistry. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
